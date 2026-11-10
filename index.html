@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="KL1WtnrsWp601rtvCXCefCkigPfSLS0JgksFbO--Mak" />
+  <meta name="msvalidate.01" content="14EA205278F359A3AA13070481871506" />
+  <title>0xnick — Open Aviation Study Tools &amp; Developer Projects</title>
+  <meta name="description" content="Open-source software, aviation training tools, and technical notes by 0xnick, including Part 107 HQ and the open 2026 FAA Part 107 sectional chart &amp; ACS reference." />
+  <link rel="canonical" href="https://0xnickmortal.github.io/" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --card: #f9fafb;
+      --link: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #f8fafc;
+        --muted: #94a3b8;
+        --border: #1e293b;
+        --card: #1e293b;
+        --link: #60a5fa;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin: 2.25rem 0 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.35rem;
+    }
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.35rem;
+      margin: 1rem 0;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin: 0.5rem 0 0;
+    }
+    li {
+      margin: 0.4rem 0;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>0xnick</h1>
+      <p class="lede">Developer notes, open datasets, and practical aviation study tools (<a href="https://github.com/0xnickmortal">GitHub @0xnickmortal</a>).</p>
+    </header>
+
+    <section aria-labelledby="aviation-heading">
+      <h2 id="aviation-heading">Aviation &amp; FAA Part 107 Study Tools</h2>
+
+      <div class="card">
+        <h3><a href="https://part107hq.com/">Part 107 HQ — FAA Remote Pilot (UAG) Practice &amp; Chart Trainer</a></h3>
+        <p>Browser-based study platform built around official 14 CFR Part 107 text, FAA Airman Knowledge Testing Supplement figures, and current 56-day VFR sectional chart editions following the October 26, 2026 PSI exam roll-out.</p>
+        <ul>
+          <li><a href="https://part107hq.com/practice/sectional-chart-questions/">Current VFR Sectional Chart Practice Questions</a> — interactive excerpts covering airport data blocks, obstacle elevations, and airspace boundaries.</li>
+          <li><a href="https://part107hq.com/mock-exam/">Free 60-Question Timed Part 107 Mock Exam</a> — weighted to the PSI UAG Information Bulletin (48% regulations, 20% airspace, 25% operations, 5% weather, 2% loading).</li>
+          <li><a href="https://part107hq.com/part-107-test-changes-2026/">What Changed on the October 2026 Part 107 Exam</a> — breakdown of the FAA September 2026 Special Edition Advisory on non-supplement chart images.</li>
+          <li><a href="https://part107hq.com/how-to-read-a-sectional-chart-for-part-107/">How to Read a Sectional Chart for Part 107</a> — step-by-step symbol guide with worked examples.</li>
+          <li><a href="https://part107hq.com/part-107-ctaf-unicom-frequencies/">CTAF vs. UNICOM Frequencies on Sectional Charts</a> — locating circled-C markers and distinguishing tower, ATIS/ASOS, and UNICOM frequencies.</li>
+          <li><a href="https://part107hq.com/part-107-agl-vs-msl/">AGL vs. MSL Altitude Conversion Guide</a> — tower 400-foot structure rules and terrain elevation math.</li>
+          <li><a href="https://part107hq.com/part-107-airspace-classes/">Part 107 Airspace Classes (B, C, D, E &amp; G)</a> — § 107.41 authorization rules, magenta vignettes, and dashed surface areas.</li>
+          <li><a href="https://part107hq.com/part-107-rules/">14 CFR Part 107 Rules Summary With Section Numbers</a> — concise reference to operating limits, night lighting, Remote ID, and Categories 1–4.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://0xnickmortal.github.io/faa-part-107-study-guide/">Open FAA-S-ACS-10B &amp; 2026 Sectional Chart Mapping</a></h3>
+        <p>Public reference repository (<a href="https://github.com/0xnickmortal/faa-part-107-study-guide"><code>0xnickmortal/faa-part-107-study-guide</code></a>) mapping FAA Airman Certification Standards task codes across Areas I–V to 14 CFR citations, open SVG diagrams, and machine-readable JSON.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="oss-heading">
+      <h2 id="oss-heading">Other Open-Source Repositories</h2>
+      <ul>
+        <li><a href="https://github.com/0xnickmortal/manimgx">manimgx</a> — mathematical animation tooling and scene generation experiments.</li>
+        <li><a href="https://github.com/0xnickmortal/scopeweaver">scopeweaver</a> — structured project scoping and decomposition utilities.</li>
+        <li><a href="https://github.com/0xnickmortal/VoxCPM">VoxCPM</a> — speech synthesis experiments and utilities.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Maintained by 0xnick · <a href="https://github.com/0xnickmortal">GitHub</a> · <a href="https://part107hq.com/">Part 107 HQ</a></p>
+    </footer>
+  </main>
+</body>
+</html>
